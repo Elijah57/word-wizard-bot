@@ -1,7 +1,8 @@
 import TelegramBot from "node-telegram-bot-api";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as http from "http";
-import  {about, config, genAIConfig, welcome } from "./config";
+import * as https from "https";
+import  {about, config, genAIConfig, welcome,  } from "./config";
 
 
 const genAI = new GoogleGenerativeAI(config.api_key);
@@ -15,12 +16,13 @@ const bot = new TelegramBot(config.bot_token, {polling: true});
 bot.onText(/\/start/, (msg: TelegramBot.Message)=>{
     const chatId = msg.chat.id;
     bot.sendMessage(chatId, welcome, {parse_mode: "Markdown"})
+    https.get(config.resucicate);
 })
 
 bot.on("message", async (msg: TelegramBot.Message)=>{
     const chatId = msg.chat.id;
     const userInput = msg.text;
-    
+
     if (userInput?.startsWith("/")){
         return ;
     }

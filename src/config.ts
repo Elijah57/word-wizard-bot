@@ -20,7 +20,8 @@ export const welcome: string = "Welcome! Please type a definition, and I'll try 
 export const config = {
     api_key: process.env.API_KEY?.toString() || "",
     bot_token: process.env.BOT_TOKEN?.toString() || "",
-    port: Number(process.env.PORT)
+    port: Number(process.env.PORT),
+    resucicate: process.env.ME?.toString()|| "http:localhost:3000"
 }
 
 export const genAIConfig = {
