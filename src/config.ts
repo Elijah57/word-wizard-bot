@@ -26,6 +26,6 @@ export const config = {
 
 export const genAIConfig = {
     candidateCount: 1,
-    maxOutputTokens: 20,
+    maxOutputTokens: 50,
     temperature: 1.0,
   }
