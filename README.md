@@ -26,15 +26,6 @@ You will be prompted to enter a definition. After entering a definition, the app
 ```
 ![Demo of the Application](./assets/demo.gif)
 
-## Contributing
-
-We welcome contributions to WordWizard! If you'd like to contribute, please follow these steps:
-
-1. Fork the Repository: Click the "Fork" button at the top-right corner of this page.
-2. Create a Feature Branch: `git checkout -b feature/your-feature-name`
-3. Commit Your Changes: `git commit -am 'Add some feature'`
-4. Push to the Branch: `git push origin feature/your-feature-name`
-5. Create a New Pull Request: Open a pull request with a clear description of your changes.
 
 ## License
 
